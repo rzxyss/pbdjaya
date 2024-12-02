@@ -2,14 +2,18 @@ program pbdaja;
 
 uses
   Forms,
-  login in 'login.pas' {Form1},
-  dm in '..\uts146\dm.pas' {dem: TDataModule};
+  menu in 'menu.pas' {fMenu},
+  varuni in 'varuni.pas' {fVaruni},
+  login in 'login.pas' {fLogin},
+  DataModul in 'DataModul.pas' {dm: TDataModule};
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
-  Application.CreateForm(Tdem, dem);
+  Application.CreateForm(TfMenu, fMenu);
+  Application.CreateForm(TfVaruni, fVaruni);
+  Application.CreateForm(TfLogin, fLogin);
+  Application.CreateForm(Tdm, dm);
   Application.Run;
 end.
