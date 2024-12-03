@@ -1,8 +1,8 @@
 object dm: Tdm
   OldCreateOrder = False
-  Left = 1163
-  Top = 213
-  Height = 343
+  Left = 922
+  Top = 98
+  Height = 360
   Width = 428
   object sw_zq: TZQuery
     Connection = fLogin.zconn
@@ -34,105 +34,6 @@ object dm: Tdm
     FilterMode = fmFilterDataset
     WildCard = '%'
     Left = 168
-    Top = 8
-  end
-  object sw_export: TmxDBGridExport
-    DateFormat = 'dd/MM/yyyy'
-    TimeFormat = 'hh:mm'
-    DateTimeFormat = 'hh:mm dd/MM/yyyy'
-    ExportType = xtExcel
-    ExportTypes = [xtHTML, xtExcel, xtWord, xtTXT, xtCSV, xtTAB, xtRTF, xtDIF, xtSYLK, xtClipboard]
-    ExportStyle = xsView
-    HTML.CustomColors.Background = clWhite
-    HTML.CustomColors.DefaultLink = clRed
-    HTML.CustomColors.DefaultFontFace = 'Arial,Helvetica'
-    HTML.CustomColors.VisitedLink = clAqua
-    HTML.CustomColors.ActiveLink = clBlue
-    HTML.CustomColors.DefaultText = clBlack
-    HTML.CustomColors.TableFontColor = clBlack
-    HTML.CustomColors.TableFontFace = 'Arial,Helvetica'
-    HTML.CustomColors.TableBackground = 16777167
-    HTML.CustomColors.TableOddBackground = clWhite
-    HTML.CustomColors.HeaderBackground = 3368601
-    HTML.CustomColors.HeadersFontColor = clWhite
-    HTML.Options = [hoShowGridLines, hoBoldHeaders, hoAutoLink, hoOddRowColoring, hoDisplayTitle]
-    HTML.Template = ctStandard
-    Messages.Caption = 'Exporting DBGrid'
-    Messages.CopiedToClipboard = 'Data was copied to clipboard!'
-    Messages.CancelCaption = '&Cancel'
-    Messages.CreatedText = 'Created:'
-    Messages.DocumentFilter.HTML = 'HTML Documents'
-    Messages.DocumentFilter.Excel = 'Excel Files'
-    Messages.DocumentFilter.Word = 'Word Documents'
-    Messages.DocumentFilter.Text = 'Text Files'
-    Messages.DocumentFilter.Comma = 'CSV (Comma delimited)'
-    Messages.DocumentFilter.Tab = 'Text (Tab delimited)'
-    Messages.DocumentFilter.RTF = 'Rich Text Format'
-    Messages.DocumentFilter.DIF = 'Data Interchange Format'
-    Messages.DocumentFilter.SYLK = 'SYLK Files'
-    Messages.ExportCaption = '&Export'
-    Messages.ExportToFile = 'Export &to file'
-    Messages.FalseText = 'False'
-    Messages.Height = 80
-    Messages.SaveTitle = 'Save document'
-    Messages.SelectFormat = 'E&xport formats:'
-    Messages.Text = 'Processing...'
-    Messages.TrueText = 'True'
-    Messages.Width = 300
-    Messages.ViewOnly = '&View only'
-    TruncateSymbol = '...'
-    RowNumberFormat = '%d'
-    DOC_RTF.Template = rtStandard
-    DOC_RTF.Options = [roShowGridLines, roOddRowColoring]
-    DOC_RTF.CustomSettings.TableBackground = 16777167
-    DOC_RTF.CustomSettings.TableOddBackground = clWhite
-    DOC_RTF.CustomSettings.HeaderBackground = 3368601
-    DOC_RTF.CustomSettings.DefaultFont.Charset = DEFAULT_CHARSET
-    DOC_RTF.CustomSettings.DefaultFont.Color = clWindowText
-    DOC_RTF.CustomSettings.DefaultFont.Height = -11
-    DOC_RTF.CustomSettings.DefaultFont.Name = 'MS Sans Serif'
-    DOC_RTF.CustomSettings.DefaultFont.Style = []
-    DOC_RTF.CustomSettings.HeaderFont.Charset = DEFAULT_CHARSET
-    DOC_RTF.CustomSettings.HeaderFont.Color = clWindowText
-    DOC_RTF.CustomSettings.HeaderFont.Height = -11
-    DOC_RTF.CustomSettings.HeaderFont.Name = 'MS Sans Serif'
-    DOC_RTF.CustomSettings.HeaderFont.Style = [fsBold]
-    DOC_RTF.CustomSettings.TableFont.Charset = DEFAULT_CHARSET
-    DOC_RTF.CustomSettings.TableFont.Color = clWindowText
-    DOC_RTF.CustomSettings.TableFont.Height = -11
-    DOC_RTF.CustomSettings.TableFont.Name = 'MS Sans Serif'
-    DOC_RTF.CustomSettings.TableFont.Style = []
-    DOC_RTF.CellWidth = 1400
-    DOC_RTF.TopMargin = 101
-    DOC_RTF.BottomMargin = 101
-    DOC_RTF.LeftMargin = 461
-    DOC_RTF.RightMargin = 562
-    EXCEL.Options = [reSetMargins, reUseBorders]
-    EXCEL.ColumnWidth = 20
-    EXCEL.Protected = False
-    EXCEL.Footer = '&P'
-    EXCEL.DefaultFont.Charset = DEFAULT_CHARSET
-    EXCEL.DefaultFont.Color = clWindowText
-    EXCEL.DefaultFont.Height = -11
-    EXCEL.DefaultFont.Name = 'MS Sans Serif'
-    EXCEL.DefaultFont.Style = []
-    EXCEL.HeaderFont.Charset = DEFAULT_CHARSET
-    EXCEL.HeaderFont.Color = clWindowText
-    EXCEL.HeaderFont.Height = -11
-    EXCEL.HeaderFont.Name = 'MS Sans Serif'
-    EXCEL.HeaderFont.Style = [fsBold]
-    EXCEL.TableFont.Charset = DEFAULT_CHARSET
-    EXCEL.TableFont.Color = clWindowText
-    EXCEL.TableFont.Height = -11
-    EXCEL.TableFont.Name = 'MS Sans Serif'
-    EXCEL.TableFont.Style = []
-    EXCEL.TopMargin = 0.300000000000000000
-    EXCEL.BottomMargin = 0.300000000000000000
-    EXCEL.LeftMargin = 0.300000000000000000
-    EXCEL.RightMargin = 0.300000000000000000
-    Options = [xoClipboardMessage, xoFooterLine, xoHeaderLine, xoShowExportDate, xoShowHeader, xoShowProgress, xoUseAlignments]
-    Version = '2.37'
-    Left = 224
     Top = 8
   end
   object gr_zq: TZQuery
@@ -167,105 +68,6 @@ object dm: Tdm
     Left = 112
     Top = 64
   end
-  object gr_export: TmxDBGridExport
-    DateFormat = 'dd/MM/yyyy'
-    TimeFormat = 'hh:mm'
-    DateTimeFormat = 'hh:mm dd/MM/yyyy'
-    ExportType = xtExcel
-    ExportTypes = [xtHTML, xtExcel, xtWord, xtTXT, xtCSV, xtTAB, xtRTF, xtDIF, xtSYLK, xtClipboard]
-    ExportStyle = xsView
-    HTML.CustomColors.Background = clWhite
-    HTML.CustomColors.DefaultLink = clRed
-    HTML.CustomColors.DefaultFontFace = 'Arial,Helvetica'
-    HTML.CustomColors.VisitedLink = clAqua
-    HTML.CustomColors.ActiveLink = clBlue
-    HTML.CustomColors.DefaultText = clBlack
-    HTML.CustomColors.TableFontColor = clBlack
-    HTML.CustomColors.TableFontFace = 'Arial,Helvetica'
-    HTML.CustomColors.TableBackground = 16777167
-    HTML.CustomColors.TableOddBackground = clWhite
-    HTML.CustomColors.HeaderBackground = 3368601
-    HTML.CustomColors.HeadersFontColor = clWhite
-    HTML.Options = [hoShowGridLines, hoBoldHeaders, hoAutoLink, hoOddRowColoring, hoDisplayTitle]
-    HTML.Template = ctStandard
-    Messages.Caption = 'Exporting DBGrid'
-    Messages.CopiedToClipboard = 'Data was copied to clipboard!'
-    Messages.CancelCaption = '&Cancel'
-    Messages.CreatedText = 'Created:'
-    Messages.DocumentFilter.HTML = 'HTML Documents'
-    Messages.DocumentFilter.Excel = 'Excel Files'
-    Messages.DocumentFilter.Word = 'Word Documents'
-    Messages.DocumentFilter.Text = 'Text Files'
-    Messages.DocumentFilter.Comma = 'CSV (Comma delimited)'
-    Messages.DocumentFilter.Tab = 'Text (Tab delimited)'
-    Messages.DocumentFilter.RTF = 'Rich Text Format'
-    Messages.DocumentFilter.DIF = 'Data Interchange Format'
-    Messages.DocumentFilter.SYLK = 'SYLK Files'
-    Messages.ExportCaption = '&Export'
-    Messages.ExportToFile = 'Export &to file'
-    Messages.FalseText = 'False'
-    Messages.Height = 80
-    Messages.SaveTitle = 'Save document'
-    Messages.SelectFormat = 'E&xport formats:'
-    Messages.Text = 'Processing...'
-    Messages.TrueText = 'True'
-    Messages.Width = 300
-    Messages.ViewOnly = '&View only'
-    TruncateSymbol = '...'
-    RowNumberFormat = '%d'
-    DOC_RTF.Template = rtStandard
-    DOC_RTF.Options = [roShowGridLines, roOddRowColoring]
-    DOC_RTF.CustomSettings.TableBackground = 16777167
-    DOC_RTF.CustomSettings.TableOddBackground = clWhite
-    DOC_RTF.CustomSettings.HeaderBackground = 3368601
-    DOC_RTF.CustomSettings.DefaultFont.Charset = DEFAULT_CHARSET
-    DOC_RTF.CustomSettings.DefaultFont.Color = clWindowText
-    DOC_RTF.CustomSettings.DefaultFont.Height = -11
-    DOC_RTF.CustomSettings.DefaultFont.Name = 'MS Sans Serif'
-    DOC_RTF.CustomSettings.DefaultFont.Style = []
-    DOC_RTF.CustomSettings.HeaderFont.Charset = DEFAULT_CHARSET
-    DOC_RTF.CustomSettings.HeaderFont.Color = clWindowText
-    DOC_RTF.CustomSettings.HeaderFont.Height = -11
-    DOC_RTF.CustomSettings.HeaderFont.Name = 'MS Sans Serif'
-    DOC_RTF.CustomSettings.HeaderFont.Style = [fsBold]
-    DOC_RTF.CustomSettings.TableFont.Charset = DEFAULT_CHARSET
-    DOC_RTF.CustomSettings.TableFont.Color = clWindowText
-    DOC_RTF.CustomSettings.TableFont.Height = -11
-    DOC_RTF.CustomSettings.TableFont.Name = 'MS Sans Serif'
-    DOC_RTF.CustomSettings.TableFont.Style = []
-    DOC_RTF.CellWidth = 1400
-    DOC_RTF.TopMargin = 101
-    DOC_RTF.BottomMargin = 101
-    DOC_RTF.LeftMargin = 461
-    DOC_RTF.RightMargin = 562
-    EXCEL.Options = [reSetMargins, reUseBorders]
-    EXCEL.ColumnWidth = 20
-    EXCEL.Protected = False
-    EXCEL.Footer = '&P'
-    EXCEL.DefaultFont.Charset = DEFAULT_CHARSET
-    EXCEL.DefaultFont.Color = clWindowText
-    EXCEL.DefaultFont.Height = -11
-    EXCEL.DefaultFont.Name = 'MS Sans Serif'
-    EXCEL.DefaultFont.Style = []
-    EXCEL.HeaderFont.Charset = DEFAULT_CHARSET
-    EXCEL.HeaderFont.Color = clWindowText
-    EXCEL.HeaderFont.Height = -11
-    EXCEL.HeaderFont.Name = 'MS Sans Serif'
-    EXCEL.HeaderFont.Style = [fsBold]
-    EXCEL.TableFont.Charset = DEFAULT_CHARSET
-    EXCEL.TableFont.Color = clWindowText
-    EXCEL.TableFont.Height = -11
-    EXCEL.TableFont.Name = 'MS Sans Serif'
-    EXCEL.TableFont.Style = []
-    EXCEL.TopMargin = 0.300000000000000000
-    EXCEL.BottomMargin = 0.300000000000000000
-    EXCEL.LeftMargin = 0.300000000000000000
-    EXCEL.RightMargin = 0.300000000000000000
-    Options = [xoClipboardMessage, xoFooterLine, xoHeaderLine, xoShowExportDate, xoShowHeader, xoShowProgress, xoUseAlignments]
-    Version = '2.37'
-    Left = 224
-    Top = 64
-  end
   object hr_zq: TZQuery
     Connection = fLogin.zconn
     SQL.Strings = (
@@ -298,117 +100,18 @@ object dm: Tdm
     Left = 112
     Top = 120
   end
-  object hr_export: TmxDBGridExport
-    DateFormat = 'dd/MM/yyyy'
-    TimeFormat = 'hh:mm'
-    DateTimeFormat = 'hh:mm dd/MM/yyyy'
-    ExportType = xtExcel
-    ExportTypes = [xtHTML, xtExcel, xtWord, xtTXT, xtCSV, xtTAB, xtRTF, xtDIF, xtSYLK, xtClipboard]
-    ExportStyle = xsView
-    HTML.CustomColors.Background = clWhite
-    HTML.CustomColors.DefaultLink = clRed
-    HTML.CustomColors.DefaultFontFace = 'Arial,Helvetica'
-    HTML.CustomColors.VisitedLink = clAqua
-    HTML.CustomColors.ActiveLink = clBlue
-    HTML.CustomColors.DefaultText = clBlack
-    HTML.CustomColors.TableFontColor = clBlack
-    HTML.CustomColors.TableFontFace = 'Arial,Helvetica'
-    HTML.CustomColors.TableBackground = 16777167
-    HTML.CustomColors.TableOddBackground = clWhite
-    HTML.CustomColors.HeaderBackground = 3368601
-    HTML.CustomColors.HeadersFontColor = clWhite
-    HTML.Options = [hoShowGridLines, hoBoldHeaders, hoAutoLink, hoOddRowColoring, hoDisplayTitle]
-    HTML.Template = ctStandard
-    Messages.Caption = 'Exporting DBGrid'
-    Messages.CopiedToClipboard = 'Data was copied to clipboard!'
-    Messages.CancelCaption = '&Cancel'
-    Messages.CreatedText = 'Created:'
-    Messages.DocumentFilter.HTML = 'HTML Documents'
-    Messages.DocumentFilter.Excel = 'Excel Files'
-    Messages.DocumentFilter.Word = 'Word Documents'
-    Messages.DocumentFilter.Text = 'Text Files'
-    Messages.DocumentFilter.Comma = 'CSV (Comma delimited)'
-    Messages.DocumentFilter.Tab = 'Text (Tab delimited)'
-    Messages.DocumentFilter.RTF = 'Rich Text Format'
-    Messages.DocumentFilter.DIF = 'Data Interchange Format'
-    Messages.DocumentFilter.SYLK = 'SYLK Files'
-    Messages.ExportCaption = '&Export'
-    Messages.ExportToFile = 'Export &to file'
-    Messages.FalseText = 'False'
-    Messages.Height = 80
-    Messages.SaveTitle = 'Save document'
-    Messages.SelectFormat = 'E&xport formats:'
-    Messages.Text = 'Processing...'
-    Messages.TrueText = 'True'
-    Messages.Width = 300
-    Messages.ViewOnly = '&View only'
-    TruncateSymbol = '...'
-    RowNumberFormat = '%d'
-    DOC_RTF.Template = rtStandard
-    DOC_RTF.Options = [roShowGridLines, roOddRowColoring]
-    DOC_RTF.CustomSettings.TableBackground = 16777167
-    DOC_RTF.CustomSettings.TableOddBackground = clWhite
-    DOC_RTF.CustomSettings.HeaderBackground = 3368601
-    DOC_RTF.CustomSettings.DefaultFont.Charset = DEFAULT_CHARSET
-    DOC_RTF.CustomSettings.DefaultFont.Color = clWindowText
-    DOC_RTF.CustomSettings.DefaultFont.Height = -11
-    DOC_RTF.CustomSettings.DefaultFont.Name = 'MS Sans Serif'
-    DOC_RTF.CustomSettings.DefaultFont.Style = []
-    DOC_RTF.CustomSettings.HeaderFont.Charset = DEFAULT_CHARSET
-    DOC_RTF.CustomSettings.HeaderFont.Color = clWindowText
-    DOC_RTF.CustomSettings.HeaderFont.Height = -11
-    DOC_RTF.CustomSettings.HeaderFont.Name = 'MS Sans Serif'
-    DOC_RTF.CustomSettings.HeaderFont.Style = [fsBold]
-    DOC_RTF.CustomSettings.TableFont.Charset = DEFAULT_CHARSET
-    DOC_RTF.CustomSettings.TableFont.Color = clWindowText
-    DOC_RTF.CustomSettings.TableFont.Height = -11
-    DOC_RTF.CustomSettings.TableFont.Name = 'MS Sans Serif'
-    DOC_RTF.CustomSettings.TableFont.Style = []
-    DOC_RTF.CellWidth = 1400
-    DOC_RTF.TopMargin = 101
-    DOC_RTF.BottomMargin = 101
-    DOC_RTF.LeftMargin = 461
-    DOC_RTF.RightMargin = 562
-    EXCEL.Options = [reSetMargins, reUseBorders]
-    EXCEL.ColumnWidth = 20
-    EXCEL.Protected = False
-    EXCEL.Footer = '&P'
-    EXCEL.DefaultFont.Charset = DEFAULT_CHARSET
-    EXCEL.DefaultFont.Color = clWindowText
-    EXCEL.DefaultFont.Height = -11
-    EXCEL.DefaultFont.Name = 'MS Sans Serif'
-    EXCEL.DefaultFont.Style = []
-    EXCEL.HeaderFont.Charset = DEFAULT_CHARSET
-    EXCEL.HeaderFont.Color = clWindowText
-    EXCEL.HeaderFont.Height = -11
-    EXCEL.HeaderFont.Name = 'MS Sans Serif'
-    EXCEL.HeaderFont.Style = [fsBold]
-    EXCEL.TableFont.Charset = DEFAULT_CHARSET
-    EXCEL.TableFont.Color = clWindowText
-    EXCEL.TableFont.Height = -11
-    EXCEL.TableFont.Name = 'MS Sans Serif'
-    EXCEL.TableFont.Style = []
-    EXCEL.TopMargin = 0.300000000000000000
-    EXCEL.BottomMargin = 0.300000000000000000
-    EXCEL.LeftMargin = 0.300000000000000000
-    EXCEL.RightMargin = 0.300000000000000000
-    Options = [xoClipboardMessage, xoFooterLine, xoHeaderLine, xoShowExportDate, xoShowHeader, xoShowProgress, xoUseAlignments]
-    Version = '2.37'
-    Left = 224
-    Top = 120
-  end
   object kr_zq: TZQuery
     Connection = fLogin.zconn
     SQL.Strings = (
       'SELECT * FROM kursus')
     Params = <>
     Left = 8
-    Top = 176
+    Top = 184
   end
   object kr_ds: TDataSource
     DataSet = kr_zq
     Left = 56
-    Top = 176
+    Top = 184
   end
   object kr_filter: TSMDBFilterDialog
     Caption = 'Filter setup dialog'
@@ -427,105 +130,6 @@ object dm: Tdm
     FindScore = fsFromFirst
     SayResult = False
     Left = 112
-    Top = 176
-  end
-  object kr_export: TmxDBGridExport
-    DateFormat = 'dd/MM/yyyy'
-    TimeFormat = 'hh:mm'
-    DateTimeFormat = 'hh:mm dd/MM/yyyy'
-    ExportType = xtExcel
-    ExportTypes = [xtHTML, xtExcel, xtWord, xtTXT, xtCSV, xtTAB, xtRTF, xtDIF, xtSYLK, xtClipboard]
-    ExportStyle = xsView
-    HTML.CustomColors.Background = clWhite
-    HTML.CustomColors.DefaultLink = clRed
-    HTML.CustomColors.DefaultFontFace = 'Arial,Helvetica'
-    HTML.CustomColors.VisitedLink = clAqua
-    HTML.CustomColors.ActiveLink = clBlue
-    HTML.CustomColors.DefaultText = clBlack
-    HTML.CustomColors.TableFontColor = clBlack
-    HTML.CustomColors.TableFontFace = 'Arial,Helvetica'
-    HTML.CustomColors.TableBackground = 16777167
-    HTML.CustomColors.TableOddBackground = clWhite
-    HTML.CustomColors.HeaderBackground = 3368601
-    HTML.CustomColors.HeadersFontColor = clWhite
-    HTML.Options = [hoShowGridLines, hoBoldHeaders, hoAutoLink, hoOddRowColoring, hoDisplayTitle]
-    HTML.Template = ctStandard
-    Messages.Caption = 'Exporting DBGrid'
-    Messages.CopiedToClipboard = 'Data was copied to clipboard!'
-    Messages.CancelCaption = '&Cancel'
-    Messages.CreatedText = 'Created:'
-    Messages.DocumentFilter.HTML = 'HTML Documents'
-    Messages.DocumentFilter.Excel = 'Excel Files'
-    Messages.DocumentFilter.Word = 'Word Documents'
-    Messages.DocumentFilter.Text = 'Text Files'
-    Messages.DocumentFilter.Comma = 'CSV (Comma delimited)'
-    Messages.DocumentFilter.Tab = 'Text (Tab delimited)'
-    Messages.DocumentFilter.RTF = 'Rich Text Format'
-    Messages.DocumentFilter.DIF = 'Data Interchange Format'
-    Messages.DocumentFilter.SYLK = 'SYLK Files'
-    Messages.ExportCaption = '&Export'
-    Messages.ExportToFile = 'Export &to file'
-    Messages.FalseText = 'False'
-    Messages.Height = 80
-    Messages.SaveTitle = 'Save document'
-    Messages.SelectFormat = 'E&xport formats:'
-    Messages.Text = 'Processing...'
-    Messages.TrueText = 'True'
-    Messages.Width = 300
-    Messages.ViewOnly = '&View only'
-    TruncateSymbol = '...'
-    RowNumberFormat = '%d'
-    DOC_RTF.Template = rtStandard
-    DOC_RTF.Options = [roShowGridLines, roOddRowColoring]
-    DOC_RTF.CustomSettings.TableBackground = 16777167
-    DOC_RTF.CustomSettings.TableOddBackground = clWhite
-    DOC_RTF.CustomSettings.HeaderBackground = 3368601
-    DOC_RTF.CustomSettings.DefaultFont.Charset = DEFAULT_CHARSET
-    DOC_RTF.CustomSettings.DefaultFont.Color = clWindowText
-    DOC_RTF.CustomSettings.DefaultFont.Height = -11
-    DOC_RTF.CustomSettings.DefaultFont.Name = 'MS Sans Serif'
-    DOC_RTF.CustomSettings.DefaultFont.Style = []
-    DOC_RTF.CustomSettings.HeaderFont.Charset = DEFAULT_CHARSET
-    DOC_RTF.CustomSettings.HeaderFont.Color = clWindowText
-    DOC_RTF.CustomSettings.HeaderFont.Height = -11
-    DOC_RTF.CustomSettings.HeaderFont.Name = 'MS Sans Serif'
-    DOC_RTF.CustomSettings.HeaderFont.Style = [fsBold]
-    DOC_RTF.CustomSettings.TableFont.Charset = DEFAULT_CHARSET
-    DOC_RTF.CustomSettings.TableFont.Color = clWindowText
-    DOC_RTF.CustomSettings.TableFont.Height = -11
-    DOC_RTF.CustomSettings.TableFont.Name = 'MS Sans Serif'
-    DOC_RTF.CustomSettings.TableFont.Style = []
-    DOC_RTF.CellWidth = 1400
-    DOC_RTF.TopMargin = 101
-    DOC_RTF.BottomMargin = 101
-    DOC_RTF.LeftMargin = 461
-    DOC_RTF.RightMargin = 562
-    EXCEL.Options = [reSetMargins, reUseBorders]
-    EXCEL.ColumnWidth = 20
-    EXCEL.Protected = False
-    EXCEL.Footer = '&P'
-    EXCEL.DefaultFont.Charset = DEFAULT_CHARSET
-    EXCEL.DefaultFont.Color = clWindowText
-    EXCEL.DefaultFont.Height = -11
-    EXCEL.DefaultFont.Name = 'MS Sans Serif'
-    EXCEL.DefaultFont.Style = []
-    EXCEL.HeaderFont.Charset = DEFAULT_CHARSET
-    EXCEL.HeaderFont.Color = clWindowText
-    EXCEL.HeaderFont.Height = -11
-    EXCEL.HeaderFont.Name = 'MS Sans Serif'
-    EXCEL.HeaderFont.Style = [fsBold]
-    EXCEL.TableFont.Charset = DEFAULT_CHARSET
-    EXCEL.TableFont.Color = clWindowText
-    EXCEL.TableFont.Height = -11
-    EXCEL.TableFont.Name = 'MS Sans Serif'
-    EXCEL.TableFont.Style = []
-    EXCEL.TopMargin = 0.300000000000000000
-    EXCEL.BottomMargin = 0.300000000000000000
-    EXCEL.LeftMargin = 0.300000000000000000
-    EXCEL.RightMargin = 0.300000000000000000
-    Options = [xoClipboardMessage, xoFooterLine, xoHeaderLine, xoShowExportDate, xoShowHeader, xoShowProgress, xoUseAlignments]
-    Version = '2.37'
-    Left = 224
     Top = 176
   end
   object nl_zq: TZQuery
@@ -560,105 +164,6 @@ object dm: Tdm
     Left = 112
     Top = 232
   end
-  object nl_export: TmxDBGridExport
-    DateFormat = 'dd/MM/yyyy'
-    TimeFormat = 'hh:mm'
-    DateTimeFormat = 'hh:mm dd/MM/yyyy'
-    ExportType = xtExcel
-    ExportTypes = [xtHTML, xtExcel, xtWord, xtTXT, xtCSV, xtTAB, xtRTF, xtDIF, xtSYLK, xtClipboard]
-    ExportStyle = xsView
-    HTML.CustomColors.Background = clWhite
-    HTML.CustomColors.DefaultLink = clRed
-    HTML.CustomColors.DefaultFontFace = 'Arial,Helvetica'
-    HTML.CustomColors.VisitedLink = clAqua
-    HTML.CustomColors.ActiveLink = clBlue
-    HTML.CustomColors.DefaultText = clBlack
-    HTML.CustomColors.TableFontColor = clBlack
-    HTML.CustomColors.TableFontFace = 'Arial,Helvetica'
-    HTML.CustomColors.TableBackground = 16777167
-    HTML.CustomColors.TableOddBackground = clWhite
-    HTML.CustomColors.HeaderBackground = 3368601
-    HTML.CustomColors.HeadersFontColor = clWhite
-    HTML.Options = [hoShowGridLines, hoBoldHeaders, hoAutoLink, hoOddRowColoring, hoDisplayTitle]
-    HTML.Template = ctStandard
-    Messages.Caption = 'Exporting DBGrid'
-    Messages.CopiedToClipboard = 'Data was copied to clipboard!'
-    Messages.CancelCaption = '&Cancel'
-    Messages.CreatedText = 'Created:'
-    Messages.DocumentFilter.HTML = 'HTML Documents'
-    Messages.DocumentFilter.Excel = 'Excel Files'
-    Messages.DocumentFilter.Word = 'Word Documents'
-    Messages.DocumentFilter.Text = 'Text Files'
-    Messages.DocumentFilter.Comma = 'CSV (Comma delimited)'
-    Messages.DocumentFilter.Tab = 'Text (Tab delimited)'
-    Messages.DocumentFilter.RTF = 'Rich Text Format'
-    Messages.DocumentFilter.DIF = 'Data Interchange Format'
-    Messages.DocumentFilter.SYLK = 'SYLK Files'
-    Messages.ExportCaption = '&Export'
-    Messages.ExportToFile = 'Export &to file'
-    Messages.FalseText = 'False'
-    Messages.Height = 80
-    Messages.SaveTitle = 'Save document'
-    Messages.SelectFormat = 'E&xport formats:'
-    Messages.Text = 'Processing...'
-    Messages.TrueText = 'True'
-    Messages.Width = 300
-    Messages.ViewOnly = '&View only'
-    TruncateSymbol = '...'
-    RowNumberFormat = '%d'
-    DOC_RTF.Template = rtStandard
-    DOC_RTF.Options = [roShowGridLines, roOddRowColoring]
-    DOC_RTF.CustomSettings.TableBackground = 16777167
-    DOC_RTF.CustomSettings.TableOddBackground = clWhite
-    DOC_RTF.CustomSettings.HeaderBackground = 3368601
-    DOC_RTF.CustomSettings.DefaultFont.Charset = DEFAULT_CHARSET
-    DOC_RTF.CustomSettings.DefaultFont.Color = clWindowText
-    DOC_RTF.CustomSettings.DefaultFont.Height = -11
-    DOC_RTF.CustomSettings.DefaultFont.Name = 'MS Sans Serif'
-    DOC_RTF.CustomSettings.DefaultFont.Style = []
-    DOC_RTF.CustomSettings.HeaderFont.Charset = DEFAULT_CHARSET
-    DOC_RTF.CustomSettings.HeaderFont.Color = clWindowText
-    DOC_RTF.CustomSettings.HeaderFont.Height = -11
-    DOC_RTF.CustomSettings.HeaderFont.Name = 'MS Sans Serif'
-    DOC_RTF.CustomSettings.HeaderFont.Style = [fsBold]
-    DOC_RTF.CustomSettings.TableFont.Charset = DEFAULT_CHARSET
-    DOC_RTF.CustomSettings.TableFont.Color = clWindowText
-    DOC_RTF.CustomSettings.TableFont.Height = -11
-    DOC_RTF.CustomSettings.TableFont.Name = 'MS Sans Serif'
-    DOC_RTF.CustomSettings.TableFont.Style = []
-    DOC_RTF.CellWidth = 1400
-    DOC_RTF.TopMargin = 101
-    DOC_RTF.BottomMargin = 101
-    DOC_RTF.LeftMargin = 461
-    DOC_RTF.RightMargin = 562
-    EXCEL.Options = [reSetMargins, reUseBorders]
-    EXCEL.ColumnWidth = 20
-    EXCEL.Protected = False
-    EXCEL.Footer = '&P'
-    EXCEL.DefaultFont.Charset = DEFAULT_CHARSET
-    EXCEL.DefaultFont.Color = clWindowText
-    EXCEL.DefaultFont.Height = -11
-    EXCEL.DefaultFont.Name = 'MS Sans Serif'
-    EXCEL.DefaultFont.Style = []
-    EXCEL.HeaderFont.Charset = DEFAULT_CHARSET
-    EXCEL.HeaderFont.Color = clWindowText
-    EXCEL.HeaderFont.Height = -11
-    EXCEL.HeaderFont.Name = 'MS Sans Serif'
-    EXCEL.HeaderFont.Style = [fsBold]
-    EXCEL.TableFont.Charset = DEFAULT_CHARSET
-    EXCEL.TableFont.Color = clWindowText
-    EXCEL.TableFont.Height = -11
-    EXCEL.TableFont.Name = 'MS Sans Serif'
-    EXCEL.TableFont.Style = []
-    EXCEL.TopMargin = 0.300000000000000000
-    EXCEL.BottomMargin = 0.300000000000000000
-    EXCEL.LeftMargin = 0.300000000000000000
-    EXCEL.RightMargin = 0.300000000000000000
-    Options = [xoClipboardMessage, xoFooterLine, xoHeaderLine, xoShowExportDate, xoShowHeader, xoShowProgress, xoUseAlignments]
-    Version = '2.37'
-    Left = 224
-    Top = 232
-  end
   object sw_rpt: TfrxReport
     Version = '4.6.8'
     DotMatrixReport = False
@@ -668,13 +173,13 @@ object dm: Tdm
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45628.940212662000000000
-    ReportOptions.LastChange = 45628.957109456000000000
+    ReportOptions.LastChange = 45629.371156493060000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
       ''
       'end.')
-    Left = 280
+    Left = 232
     Top = 8
     Datasets = <
       item
@@ -697,12 +202,12 @@ object dm: Tdm
         Width = 793.701300000000000000
       end
       object Header1: TfrxHeader
-        Height = 22.677180000000000000
+        Height = 30.236240000000000000
         Top = 102.047310000000000000
         Width = 793.701300000000000000
         object Memo1: TfrxMemoView
           Left = 151.181200000000000000
-          Top = 3.779530000000000000
+          Top = 11.338590000000000000
           Width = 68.031540000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -718,7 +223,7 @@ object dm: Tdm
         end
         object Memo2: TfrxMemoView
           Left = 219.212740000000000000
-          Top = 3.779530000000000000
+          Top = 11.338590000000000000
           Width = 158.740260000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -734,7 +239,7 @@ object dm: Tdm
         end
         object Memo3: TfrxMemoView
           Left = 377.953000000000000000
-          Top = 3.779530000000000000
+          Top = 11.338590000000000000
           Width = 136.063080000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -750,7 +255,7 @@ object dm: Tdm
         end
         object Memo4: TfrxMemoView
           Left = 514.016080000000000000
-          Top = 3.779530000000000000
+          Top = 11.338590000000000000
           Width = 52.913420000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -766,7 +271,7 @@ object dm: Tdm
         end
         object Memo5: TfrxMemoView
           Left = 566.929500000000000000
-          Top = 3.779530000000000000
+          Top = 11.338590000000000000
           Width = 79.370130000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -783,7 +288,7 @@ object dm: Tdm
       end
       object MasterData1: TfrxMasterData
         Height = 22.677180000000000000
-        Top = 147.401670000000000000
+        Top = 154.960730000000000000
         Width = 793.701300000000000000
         DataSet = sw_dbrpt
         DataSetName = 'sw_dbrpt'
@@ -884,13 +389,28 @@ object dm: Tdm
           ParentFont = False
         end
       end
+      object Memo6: TfrxMemoView
+        Left = 347.716760000000000000
+        Top = 49.133890000000000000
+        Width = 94.488250000000000000
+        Height = 18.897650000000000000
+        ShowHint = False
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = []
+        Memo.UTF8 = (
+          'Laporan Siswa')
+        ParentFont = False
+      end
     end
   end
   object sw_dbrpt: TfrxDBDataset
     UserName = 'sw_dbrpt'
     CloseDataSource = False
     DataSource = sw_ds
-    Left = 336
+    Left = 288
     Top = 8
   end
   object gr_rpt: TfrxReport
@@ -908,7 +428,7 @@ object dm: Tdm
       'begin'
       ''
       'end.')
-    Left = 280
+    Left = 232
     Top = 64
     Datasets = <
       item
@@ -1119,7 +639,7 @@ object dm: Tdm
     UserName = 'gr_dbrpt'
     CloseDataSource = False
     DataSource = gr_ds
-    Left = 336
+    Left = 288
     Top = 64
   end
   object hr_rpt: TfrxReport
@@ -1137,7 +657,7 @@ object dm: Tdm
       'begin'
       ''
       'end.')
-    Left = 280
+    Left = 232
     Top = 120
     Datasets = <
       item
@@ -1246,7 +766,7 @@ object dm: Tdm
     UserName = 'hr_dbrpt'
     CloseDataSource = False
     DataSource = hr_ds
-    Left = 336
+    Left = 288
     Top = 120
   end
   object kr_rpt: TfrxReport
@@ -1264,7 +784,7 @@ object dm: Tdm
       'begin'
       ''
       'end.')
-    Left = 280
+    Left = 232
     Top = 176
     Datasets = <
       item
@@ -1475,14 +995,14 @@ object dm: Tdm
     UserName = 'kr_dbrpt'
     CloseDataSource = False
     DataSource = kr_ds
-    Left = 336
+    Left = 288
     Top = 176
   end
   object nl_dbrpt: TfrxDBDataset
     UserName = 'nl_dbrpt'
     CloseDataSource = False
     DataSource = nl_ds
-    Left = 336
+    Left = 288
     Top = 232
   end
   object nl_rpt: TfrxReport
@@ -1500,7 +1020,7 @@ object dm: Tdm
       'begin'
       ''
       'end.')
-    Left = 280
+    Left = 232
     Top = 232
     Datasets = <
       item
